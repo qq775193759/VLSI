@@ -13,7 +13,8 @@ int main(int argc, char *argv[])
     Point init(0,0);
     Point term(100,100);
     LineMaker linemaker(init, term);
-    qDebug()<<linemaker.terminal_point.x;
+    linemaker.Try();
+    qDebug()<<linemaker.line_stack.size();
 
     return a.exec();
 }

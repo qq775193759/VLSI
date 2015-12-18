@@ -12,6 +12,8 @@ public:
 
 
     Line(Point st, Point en);
+    Line();
+    void getDirection();
 };
 
 

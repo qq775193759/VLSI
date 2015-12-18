@@ -13,13 +13,16 @@ public:
     int current_ok_flag;
     int last_ok_flag;
 
+    Point current_point;
+
     QVector<Line> line_stack;
     Point init_point;
     Point terminal_point;
 
-    LineMaker();
-
     LineMaker(Point init, Point term);
+    Point getNextPoint();
+    int isArrive();
+    int Try();//iterate
 };
 
 #endif // LINEMAKER_H
